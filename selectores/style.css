@@ -1,0 +1,90 @@
+*{
+    color: blue;
+}
+p.rojo{
+    color: red;
+}
+p#elparrafo{
+    color: saddlebrown;
+}
+h2,h3{
+    color: green;
+}
+div p{
+    color: green;
+}
+div.soyundiv p{
+    color: red;
+}
+div p span{
+    color: red;
+}
+p span {
+    color: brown;
+}
+div.h + p{
+    color: cadetblue;
+}
+p[title]{
+    color: darkcyan;
+}
+a[href="http://ciclos.org"]{
+    color: green;
+}
+a[href*="ciclos"]{
+    color: green;
+}
+div.contenedor p:first-child{
+    color: hotpink;
+}
+a.l:link{
+    background-color: red;
+}
+a.l:visited{
+    background-color:lightblue;
+}
+p.sobre:hover{
+    background-color: lightsalmon;
+    font-weight: bold;
+}
+p.sobre:active{
+    background-color: blue;
+    color: red;
+}
+button:active{
+    background-color: blue;
+    color: red;
+}
+input:focus{
+    color: red;
+    background-color: orange;
+}
+h3.leyendalegal::first-line{
+    color: red;
+}
+p.antes::before{
+    content:"covid 19";
+    font-weight: bold;
+}
+p.después::after{
+    content: "todos vacunados";
+    background-color: blue;
+    color: brown;
+}
+h3.Módulos{
+    counter-reset: cuenta_ciclos;
+}
+p.ciclos::before{
+    content: counter(cuenta_ciclos);
+    counter-increment: cuenta_ciclos;
+}
+h3.pucho{
+    counter-reset: cuenta_puchos;
+}
+p.puchos::before{
+    content: counter(cuenta_puchos);
+    counter-increment: cuenta_puchos 5;
+}
+p.o::first-letter{
+    color: green;
+}
